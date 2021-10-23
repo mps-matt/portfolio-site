@@ -10,6 +10,14 @@
     "lint": "ng lint",
     "lint-fix": "ng lint --fix"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": ["./node_modules/,bin/eslint - fix", "git add"]
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
