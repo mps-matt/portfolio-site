@@ -1,4 +1,3 @@
-import 'zone.js/dist/zone-testing';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';

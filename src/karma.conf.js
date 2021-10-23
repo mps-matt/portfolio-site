@@ -4,6 +4,7 @@ module.exports = function (config) {
 		basePath: '../..',
 		frameworks: ['jasmine', 'karma-typescript'],
 		files: [
+			'node_modules/zone.js/dist/zone.js',
 			{ pattern: '**/src/app/*.component.ts', type: 'js' },
 			{ pattern: '**/src/app/*.module.ts', type: 'js' },
 			{ pattern: '**/src/app/*.spec.ts', type: 'js' }
