@@ -39,6 +39,7 @@
     "@typescript-eslint/parser": "4.28.2",
     "angular-eslint": "0.0.1-alpha.0",
     "eslint": "^7.26.0",
+    "husky": "^7.0.4",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
