@@ -11,7 +11,7 @@ module.exports = function (config) {
 		exclude: ['node_modules'],
 		preprocessors: {
 			'**/src/app/**/*.component.ts': 'karma-typescript',
-			'**/src/app/**/*.module.ts': 'karma-typscript',
+			'**/src/app/**/*.module.ts': 'karma-typescript',
 			'**/src/app/**/*.spec.ts': 'karma-typescript'
 		},
 		reporters: ['progress', 'karma-typescript'],
