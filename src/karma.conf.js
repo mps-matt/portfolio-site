@@ -3,7 +3,11 @@ module.exports = function (config) {
 	config.set({
 		basePath: '../..',
 		frameworks: ['jasmine'],
-		files: ['app/*.spec.ts', 'app/**/*.spec.js', 'app/**/*.spec.ts'],
+		files: [
+			'app/app.component.spec.ts',
+			'app/**/*.spec.js',
+			'app/**/*.spec.ts'
+		],
 		exclude: [],
 		preprocessors: {},
 		reporters: [],
@@ -13,6 +17,6 @@ module.exports = function (config) {
 		autoWatch: true,
 		browsers: ['ChromeHeadless'],
 		singleRun: true,
-		failOnEmptyTestSuite: true
+		failOnEmptyTestSuite: false
 	});
 };
