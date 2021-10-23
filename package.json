@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
-    "lint": "tslint --config tslint.json --project .codesandbox",
+    "lint": "tslint --config tslint.json --project codesandbox",
     "e2e": "ng e2e"
   },
   "private": true,
