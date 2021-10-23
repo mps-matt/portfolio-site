@@ -1,8 +1,6 @@
 {
     "defaultSeverity": "none",
-    "extends": [
-        "tslint:recommended"
-    ],
+    "extends": "tslint:recommended",
     "jsRules": {
       "no-empty": true
     },
@@ -10,9 +8,9 @@
         "no-internal-module": false,
         "typedef-whitespace": false,
         "quotemark": [
-	        true,
-	        "single"
-	    ],
+	    true,
+	    "single"
+    	],
         "variable-name": [
             true,
             "check-format",
@@ -46,6 +44,5 @@
         "arrow-return-shorthand": true,
         "no-any": true,
         "no-magic-numbers": true
-    },
-    "rulesDirectory": []
+    }
 }
