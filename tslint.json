@@ -10,9 +10,9 @@
         "no-internal-module": false,
         "typedef-whitespace": false,
         "quotemark": [
-8	        true,
-9	        "single"
-10	    ],
+	        true,
+	        "single"
+	    ],
         "variable-name": [
             true,
             "check-format",
@@ -20,27 +20,27 @@
         ],
         "no-console": false,
         "trailing-comma": [
-15	        false
-16	    ],
+	        false
+	    ],
         "only-arrow-functions": [
-21	        true,
-22	        "allow-declarations",
-23	        "allow-named-functions"
-24	    ],
+	        true,
+	        "allow-declarations",
+	        "allow-named-functions"
+	    ],
         "no-reference": false,
         "cyclomatic-complexity": [
-65	       true,
-66	       20
-67	    ],
+	       true,
+	       20
+	    ],
         "no-namespace": false,
         "no-duplicate-imports": true,
         "no-unused-expression": true,
         "max-line-length": [true, 200],
         "no-bitwise": false,
         "semicolon": [
-114	        true,
-115	        "never"
-116	    ],
+	        true,
+	        "never"
+	    ],
         "align": true,
         "prefer-const": true,
         "arrow-return-shorthand": true,
