@@ -16,7 +16,7 @@
     }
   },
   "lint-staged": {
-    "*.ts": ["./node_modules/,bin/eslint - fix", "git add"]
+    "*.ts": ["ng lint --fix", "git add"]
   },
   "private": true,
   "dependencies": {
