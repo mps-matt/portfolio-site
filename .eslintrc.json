@@ -1,5 +1,5 @@
 {
-	"parserOptions": { "sourceType": "module" },
+	"parserOptions": { "sourceType": "module", "ecmaVersion": 2015 },
 	"extends": "eslint:recommended",
 	"rules": {
 		"semi": ["error", "always"],
