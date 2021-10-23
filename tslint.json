@@ -3,22 +3,48 @@
     "extends": [
         "tslint:recommended"
     ],
-    "jsRules": {},
+    "jsRules": {
+      "no-empty": true
+    },
     "rules": {
         "no-internal-module": false,
         "typedef-whitespace": false,
+        "quotemark": [
+8	        true,
+9	        "single"
+10	    ],
         "variable-name": [
             true,
             "check-format",
             "allow-leading-underscore"
         ],
         "no-console": false,
+        "trailing-comma": [
+15	        false
+16	    ],
+        "only-arrow-functions": [
+21	        true,
+22	        "allow-declarations",
+23	        "allow-named-functions"
+24	    ],
         "no-reference": false,
+        "cyclomatic-complexity": [
+65	       true,
+66	       20
+67	    ],
         "no-namespace": false,
-        "max-line-length": [true, 140],
+        "no-duplicate-imports": true,
+        "no-unused-expression": true,
+        "max-line-length": [true, 200],
         "no-bitwise": false,
+        "semicolon": [
+114	        true,
+115	        "never"
+116	    ]
         "align": true,
+        "prefer-const": true,
         "arrow-return-shorthand": true,
+        "no-any": true,
         "no-magic-numbers": true
     },
     "rulesDirectory": []
