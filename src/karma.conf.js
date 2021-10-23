@@ -4,9 +4,9 @@ module.exports = function (config) {
 		basePath: '../..',
 		frameworks: ['jasmine'],
 		files: [
-			'app/app.component.spec.ts',
-			'app/**/*.spec.js',
-			'app/**/*.spec.ts'
+			'portfolio-site/app/app.component.spec.ts',
+			'portfolio-site/app/**/*.spec.js',
+			'portfolio-site/app/**/*.spec.ts'
 		],
 		exclude: [],
 		preprocessors: {},
