@@ -3,7 +3,8 @@
     "extends": "tslint:recommended",
     "jsRules": {
       "no-empty": true
-    },
+    }, 
+    "files": ["*.ts", "*.tsx"],
     "rules": {
         "no-internal-module": false,
         "typedef-whitespace": false,
