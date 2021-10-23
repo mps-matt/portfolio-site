@@ -14,6 +14,9 @@
     "lib": [
       "es2018",
       "dom"
-    ]
-  }
+    ],
+    "allowJs": false
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
