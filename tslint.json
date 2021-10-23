@@ -40,7 +40,7 @@
         "semicolon": [
 114	        true,
 115	        "never"
-116	    ]
+116	    ],
         "align": true,
         "prefer-const": true,
         "arrow-return-shorthand": true,
