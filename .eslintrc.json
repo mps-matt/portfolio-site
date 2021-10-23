@@ -1,4 +1,6 @@
 {
+	"parser": "babel-eslint",
+	"parserOptions": { "sourceType": "module" },
 	"extends": "eslint:recommended",
 	"rules": {
 		"semi": ["error", "always"],
