@@ -3,7 +3,7 @@ module.exports = function (config) {
 	config.set({
 		basePath: '../..',
 		frameworks: ['jasmine'],
-		files: ['**/*.spec.ts'],
+		files: [{ pattern: '**/*.spec.ts', type: 'ts' }],
 		exclude: [],
 		preprocessors: {},
 		reporters: [],
