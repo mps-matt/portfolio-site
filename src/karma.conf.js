@@ -6,7 +6,7 @@ module.exports = function (config) {
 		files: [{ pattern: '**/src/**/*.spec.ts', type: 'js' }],
 		exclude: ['node_modules'],
 		preprocessors: {
-			'**/src/**/*.spec.ts': 'karma-typescript'
+			'**/src/app/**/*.spec.ts': 'karma-typescript'
 		},
 		reporters: ['progress', 'karma-typescript'],
 		port: 9876,
