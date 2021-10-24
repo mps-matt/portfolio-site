@@ -6,7 +6,7 @@ It is a simple Angular-only frontend, currently without any API.
 It follows a CI/CD process so PRs must build, have all tests pass and pass linting before they can merge in to main.
 A Pre-commit is setup to run ng lint --fix and commit any linting changes. This is to ensure code looks and feels the same throughout the project. If, for any reason, the code being commited does not pass linting and can't be automatically fixed, the commit will not be prcoess. Please fix the code that does not follow the linting rule and commit again. 
 
-You can famisliarise yourself with the linting rules in the .eslintrc.json file at the root of the repository.
+You can familiarise yourself with the linting rules in the .eslintrc.json file at the root of the repository.
 
 Run `npm install` after first cloning the repositroy to pull down the required NPM packages.
 
