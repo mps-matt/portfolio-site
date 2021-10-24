@@ -17,7 +17,7 @@
   },
   "lint-staged": {
     "*.ts": [
-      "./node_modules/.bin/eslint --fix",
+      "ng lint --fix",
       "git add"
     ]
   },
