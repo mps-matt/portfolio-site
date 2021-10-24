@@ -1,7 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-n 15
-npx -v
-npm -v
-node -v
+npx lint-staged
