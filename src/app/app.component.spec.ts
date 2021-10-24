@@ -1,29 +1,35 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { AppModule } from './app.module';
-import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 
-let component: AppComponent;
-let fixture: ComponentFixture<AppComponent>;
+describe( 'AppComponent', () => {
+    beforeEach( async () => {
+        await TestBed.configureTestingModule( {
+            imports: [
+                RouterTestingModule
+            ],
+            declarations: [
+                AppComponent
+            ]
+        } ).compileComponents();
+    } );
 
-beforeEach(
-	waitForAsync(() => {
-		TestBed.configureTestingModule({
-			declarations: [AppComponent],
-			imports: [AppModule, BrowserDynamicTestingModule],
-			providers: []
-		}).compileComponents();
-	})
-);
+    it( 'should create the app', () => {
+        const fixture = TestBed.createComponent( AppComponent );
+        const app = fixture.componentInstance;
+        expect( app ).toBeTruthy();
+    } );
 
-beforeEach(() => {
-	fixture = TestBed.createComponent(AppComponent);
-	component = fixture.componentInstance;
-	fixture.detectChanges();
-});
+    it( `should have as title 'portfolio-site'`, () => {
+        const fixture = TestBed.createComponent( AppComponent );
+        const app = fixture.componentInstance;
+        expect( app.title ).toEqual( 'portfolio-site' );
+    } );
 
-describe('app', () => {
-	it('will create component', () => {
-		expect(component).toBeTruthy();
-	});
-});
+    it( 'should render title', () => {
+        const fixture = TestBed.createComponent( AppComponent );
+        fixture.detectChanges();
+        const compiled = fixture.nativeElement as HTMLElement;
+        expect( compiled.querySelector( '.content span' )?.textContent ).toContain( 'portfolio-site app is running!' );
+    } );
+} );

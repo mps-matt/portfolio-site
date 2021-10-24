@@ -1,8 +1,81 @@
 {
-	"parserOptions": { "sourceType": "module", "ecmaVersion": 2015 },
-	"extends": "eslint:recommended",
-	"rules": {
-		"semi": ["error", "always"],
-		"quotes": ["error", "double"]
-	}
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "no-console": "error",
+        "no-continue": "error",
+        "no-empty": "error",
+        "no-eval": "error",
+        "no-empty-function": "error",
+        "no-implied-eval": "error",
+        "no-magic-numbers": "error",
+        "no-return-await": "error",
+        "no-undefined": "error",
+        "no-unused-expressions": "error",
+        "no-var": "error",
+        "no-useless-return": "error",
+        "prefer-const": "error",
+        "prefer-arrow-callback": "error",
+        "prefer-spread": "error",
+        "require-await": "error",
+        "vars-on-top": "error",
+        "no-trailing-spaces": "error",
+        "yoda": "error",
+        "comma-dangle": ["error", "never"],
+        "array-bracket-spacing": ["error", "always"],
+        "arrow-spacing": "error",
+        "block-spacing": ["error", "always"],
+        "brace-style": "error",
+        "comma-spacing": "error",
+        "comma-style": "error",
+        "eol-last": "error",
+        "func-call-spacing": ["error", "never"],
+        "indent": "error",
+        "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+        "space-in-parens": ["error", "always"]
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {}
+    }
+  ]
 }
