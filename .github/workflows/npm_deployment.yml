@@ -25,6 +25,14 @@ jobs:
         npm install
         npm run build
         
+    - name: Lint
+      run: |
+        npm run lint
+        
+    - name: Test
+      run: |
+        npm run test
+        
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.5.0
       with:
