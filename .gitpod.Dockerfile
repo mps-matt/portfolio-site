@@ -5,6 +5,6 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 USER root
 
-RUN apt install -y novnc chromium
+RUN apt install chromium
 
 USER gitpod
