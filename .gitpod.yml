@@ -1,6 +1,15 @@
 image:
   file: .gitpod.Dockerfile
 
+github:
+  prebuilds:
+    master: false
+    branches: false
+    pullRequests: false
+    pullRequestsFromForks: false
+    addComment: false
+    addBadge: false
+
 tasks:
   - init: npm install && npm run build
     command: npm run start
