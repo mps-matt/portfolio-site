@@ -1,9 +1,8 @@
 FROM gitpod/workspace-full-vnc
 
 USER root
-
+ENV DEBIAN_FRONTEND=noninteractive
 ARG DEBIAN_FRONTEND=noninteractive
-
 # Install Cypress dependencies.
 RUN sudo apt-get update \
  && sudo apt-get install -yq \
@@ -19,6 +18,7 @@ RUN sudo apt-get update \
    xvfb \
  && sudo rm -rf /var/lib/apt/lists/*
 
+ARG DEBIAN_FRONTEND=noninteractive
 # Install Chromium
 RUN sudo apt-get update -q \
  && sudo apt-get install -yq \
