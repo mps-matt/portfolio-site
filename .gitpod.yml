@@ -1,6 +1,3 @@
-image:
-  file: .gitpod.Dockerfile
-
 github:
   prebuilds:
     master: false
@@ -12,6 +9,5 @@ github:
 
 tasks:
   - init: npm install && npm run build
-  - command: chromium-browser --no-sandbox
   - command: npm run start
     
