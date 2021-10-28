@@ -12,5 +12,6 @@ github:
 
 tasks:
   - init: npm install && npm run build
-    command: npm run start
+  - command: chromium-browser --no-sandbox
+  - command: npm run start
     
