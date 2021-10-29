@@ -1,4 +1,4 @@
-import { InMemoryPortfolioServiceService } from './in-memory-portfolio-service/in-memory-portfolio-service.service';
+import { InMemoryPortfolioService } from './in-memory-portfolio-service/in-memory-portfolio.service';
 import { PortfolioServiceFactory } from './iportfolio-service.factory';
 import { IPortfolioService } from './iportfolio-service.service';
 
@@ -15,6 +15,6 @@ describe( 'IPortfolioServiceFactory', () => {
 
     it( 'should return InMemoryPortfolioServiceProvider', () => {
         const portfolioServiceProvider: IPortfolioService = factory();
-        expect( portfolioServiceProvider instanceof InMemoryPortfolioServiceService ).toBeTrue();
+        expect( portfolioServiceProvider instanceof InMemoryPortfolioService ).toBeTrue();
     } )
 } );

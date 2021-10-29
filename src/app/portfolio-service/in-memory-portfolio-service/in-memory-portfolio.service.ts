@@ -3,7 +3,7 @@ import { Observable, of } from 'rxjs';
 import { IPortfolioService } from '../iportfolio-service.service';
 
 @Injectable()
-export class InMemoryPortfolioServiceService extends IPortfolioService {
+export class InMemoryPortfolioService extends IPortfolioService {
     get bannerImage(): Observable<string> {
         return of( 'I AM TEST STRING' );
     }

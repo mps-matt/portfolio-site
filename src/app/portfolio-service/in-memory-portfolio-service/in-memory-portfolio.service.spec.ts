@@ -1,19 +1,19 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { Observable } from 'rxjs';
-import { InMemoryPortfolioServiceService } from './in-memory-portfolio-service.service';
+import { InMemoryPortfolioService } from './in-memory-portfolio.service';
 
-describe( 'InMemoryPortfolioServiceService', () => {
-    let service: InMemoryPortfolioServiceService;
+describe( 'InMemoryPortfolioService', () => {
+    let service: InMemoryPortfolioService;
 
     beforeEach( async () => {
         await TestBed.configureTestingModule( {
             providers: [
-                InMemoryPortfolioServiceService
+                InMemoryPortfolioService
             ]
         } ).compileComponents();
 
         TestBed.configureTestingModule( {} );
-        service = TestBed.inject( InMemoryPortfolioServiceService );
+        service = TestBed.inject( InMemoryPortfolioService );
     } );
 
     it( 'should be created', () => {

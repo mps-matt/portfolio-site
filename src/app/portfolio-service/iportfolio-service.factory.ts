@@ -1,8 +1,8 @@
 import { IPortfolioService } from './iportfolio-service.service';
-import { InMemoryPortfolioServiceService } from './in-memory-portfolio-service/in-memory-portfolio-service.service';
+import { InMemoryPortfolioService } from './in-memory-portfolio-service/in-memory-portfolio.service';
 
 const PortfolioServiceFactory = (): IPortfolioService => {
-    return new InMemoryPortfolioServiceService();
+    return new InMemoryPortfolioService();
 };
 
 export { PortfolioServiceFactory };
