@@ -5,7 +5,7 @@ import { AppModule } from './app.module';
 
 describe( 'AppComponent', () => {
     beforeEach( async () => {
-        await TestBed.configureTestingModule( {
+        await TestBed.configureTestingModule({
             imports: [
                 RouterTestingModule,
                 AppModule
@@ -13,18 +13,18 @@ describe( 'AppComponent', () => {
             declarations: [
                 AppComponent
             ]
-        } ).compileComponents();
-    } );
+        }).compileComponents();
+    });
 
     it( 'should create the app', () => {
         const fixture = TestBed.createComponent( AppComponent );
         const app = fixture.componentInstance;
         expect( app ).toBeTruthy();
-    } );
+    });
 
     it( `should have as title 'portfolio-site'`, () => {
         const fixture = TestBed.createComponent( AppComponent );
         const app = fixture.componentInstance;
         expect( app.title ).toEqual( 'portfolio-site' );
-    } );
-} );
+    });
+});

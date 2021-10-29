@@ -7,14 +7,14 @@ describe( 'IPortfolioServiceFactory', () => {
 
     beforeEach( () => {
         factory = PortfolioServiceFactory;
-    } );
+    });
 
     it( 'should be created', () => {
         expect( factory ).toBeTruthy();
-    } );
+    });
 
     it( 'should return InMemoryPortfolioServiceProvider', () => {
         const portfolioServiceProvider: IPortfolioService = factory();
         expect( portfolioServiceProvider instanceof InMemoryPortfolioService ).toBeTrue();
-    } )
-} );
+    })
+});

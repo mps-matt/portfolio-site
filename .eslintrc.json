@@ -64,7 +64,7 @@
         "func-call-spacing": ["error", "never"],
         "indent": "error",
         "quotes": ["error", "single", { "allowTemplateLiterals": true }],
-        "space-in-parens": ["error", "always"]
+        "space-in-parens": ["error", "always", { "exceptions": ["{}"]}]
       }
     },
     {

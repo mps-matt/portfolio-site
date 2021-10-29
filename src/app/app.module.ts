@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IPortfolioServiceModule } from './portfolio-service/iportfolio-service.module';
 
-@NgModule( {
+@NgModule({
     declarations: [
         AppComponent
     ],
@@ -15,5 +15,5 @@ import { IPortfolioServiceModule } from './portfolio-service/iportfolio-service.
         IPortfolioServiceModule
     ],
     bootstrap: [ AppComponent ]
-} )
+})
 export class AppModule { }
