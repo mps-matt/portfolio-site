@@ -21,8 +21,8 @@ describe( 'InMemoryPortfolioServiceService', () => {
     } );
 
     describe( 'bannerImage', () => {
-
         let stringObservable: Observable<string>;
+
         beforeEach( () => {
             stringObservable = service.bannerImage;
         } )
@@ -37,5 +37,7 @@ describe( 'InMemoryPortfolioServiceService', () => {
                 expect( result ).toBe( 'I AM TEST STRING' );
             } );
         } ) );
+
     } );
+
 } );
