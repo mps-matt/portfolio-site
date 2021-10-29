@@ -1,5 +1,4 @@
 import { TestBed } from '@angular/core/testing';
-
 import { InMemoryPortfolioServiceService } from './in-memory-portfolio-service.service';
 
 describe( 'InMemoryPortfolioServiceService', () => {

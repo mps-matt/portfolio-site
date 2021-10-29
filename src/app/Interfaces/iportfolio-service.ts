@@ -1,3 +1,5 @@
+import { Observable } from 'rxjs';
+
 export interface IPortfolioService {
-    getBannerImage: string;
+    bannerImage: Observable<string>;
 }
