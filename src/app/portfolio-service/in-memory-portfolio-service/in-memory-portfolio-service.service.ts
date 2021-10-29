@@ -1,11 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { IPortfolioService } from 'src/app/Interfaces/iportfolio-service';
+import { IPortfolioService } from '../iportfolio-service.service';
 
-@Injectable( {
-    providedIn: 'root'
-} )
-export class InMemoryPortfolioServiceService implements IPortfolioService {
+@Injectable()
+export class InMemoryPortfolioServiceService extends IPortfolioService {
     get bannerImage(): Observable<string> {
         return of( 'I AM TEST STRING' );
     }

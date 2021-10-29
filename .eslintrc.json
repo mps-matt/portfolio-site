@@ -39,7 +39,6 @@
         "no-continue": "error",
         "no-empty": "error",
         "no-eval": "error",
-        "no-empty-function": "error",
         "no-implied-eval": "error",
         "no-magic-numbers": "error",
         "no-return-await": "error",
