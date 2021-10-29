@@ -1,5 +1,8 @@
 // This file is required by karma.conf.js and loads recursively all the .spec and framework files
 
+// Where local ng lives if not installed globally in container on startup
+// ./node_modules/@angular/cli/bin/ng generate
+
 import 'zone.js/testing';
 import { getTestBed } from '@angular/core/testing';
 import {
