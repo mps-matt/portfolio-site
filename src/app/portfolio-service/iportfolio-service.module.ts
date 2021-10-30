@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PortfolioServiceFactory } from './iportfolio-service.factory';
-import { IPortfolioService } from './iportfolio-service.service';
+import { IPortfolioService } from './iportfolio-service';
 
 @NgModule({
     providers: [

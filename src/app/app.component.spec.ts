@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { BrowserTestingModule } from '@angular/platform-browser/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
@@ -7,11 +8,9 @@ describe( 'AppComponent', () => {
     beforeEach( async () => {
         await TestBed.configureTestingModule({
             imports: [
+                BrowserTestingModule,
                 RouterTestingModule,
                 AppModule
-            ],
-            declarations: [
-                AppComponent
             ]
         }).compileComponents();
     });
