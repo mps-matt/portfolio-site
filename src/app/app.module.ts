@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IPortfolioServiceModule } from './portfolio-service/iportfolio-service.module';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
     declarations: [
@@ -12,7 +11,7 @@ import { IPortfolioServiceModule } from './portfolio-service/iportfolio-service.
     imports: [
         BrowserModule,
         AppRoutingModule,
-        IPortfolioServiceModule
+        HomeModule
     ],
     bootstrap: [ AppComponent ]
 })
