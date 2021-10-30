@@ -1,6 +1,6 @@
 import { InMemoryPortfolioService } from './in-memory-portfolio-service/in-memory-portfolio.service';
 import { PortfolioServiceFactory } from './iportfolio-service.factory';
-import { IPortfolioService } from './iportfolio-service.service';
+import { IPortfolioService } from './iportfolio-service';
 
 describe( 'IPortfolioServiceFactory', () => {
     let factory: typeof PortfolioServiceFactory;

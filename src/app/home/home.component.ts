@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IPortfolioService } from '../portfolio-service/iportfolio-service.service';
+import { IPortfolioService } from '../portfolio-service/iportfolio-service';
 
 @Component({
     selector: 'app-home',
@@ -11,8 +11,4 @@ export class HomeComponent {
     constructor(
     public readonly portfolioService: IPortfolioService
     ) { }
-
-    //    ngOnInit(): void {
-    //    }
-
 }

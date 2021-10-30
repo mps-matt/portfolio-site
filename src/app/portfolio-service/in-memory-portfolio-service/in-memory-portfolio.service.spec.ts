@@ -34,7 +34,7 @@ describe( 'InMemoryPortfolioService', () => {
 
         it( 'should be expected string', waitForAsync( () => {
             stringObservable.subscribe( result => {
-                expect( result ).toBe( 'I AM TEST STRING' );
+                expect( result ).toBe( 'https://lh3.googleusercontent.com/qwHXqF8VeG-9H4wAzfKJEefuonmgqs7l6PEOugnxrx_-fLLmCNe5urhop3hsQh0X0rhb8qEfTVelxn6TIAxGDqb4TpPkrFfxkD3RQvw1XHWs6iep8li_TnfPIBnJHlPrYPrQ05jKqQ=w2400' );
             });
         }) );
     });
