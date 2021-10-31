@@ -1,3 +1,6 @@
+// Code based on implementation from https://codepen.io/yaclive/pen/EayLYO
+// Credit for solution and idea goes to them
+
 var runLoadingAnimation = () => {
     var canvas = document.getElementById('loadingAnimation');
     var context = canvas.getContext('2d');
