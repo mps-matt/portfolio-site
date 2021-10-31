@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
 import { BannerModule } from '../banner/banner.module';
 import { HomePageComponent } from './home-page.component';
 
@@ -7,7 +8,8 @@ import { HomePageComponent } from './home-page.component';
         HomePageComponent
     ],
     imports: [
-        BannerModule
+        BannerModule,
+        MatCardModule
     ],
     exports: [
         HomePageComponent
