@@ -3,9 +3,14 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
+import { runLoadingAnimation } from './loadingAnimation';
 
 if ( environment.production ) {
     enableProdMode();
+}
+
+window.onload = () => {
+    runLoadingAnimation();
 }
 
 platformBrowserDynamic().bootstrapModule( AppModule );
