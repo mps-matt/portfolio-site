@@ -1,9 +1,11 @@
-<div class="banner" 
+
                                 // TODO: if the string returned from my service was user editable,
                                 // this might open up a XSS vunrability.
                                 // should sanitise all strings coming out of portfolio service
+
+<div class="banner"
     [style.background-image]="'url('+ (portfolioService.bannerImage | async)+')'" 
-    [style.background-size]="'contain'">
+    [style.background-size]="'cover'">
 
     <app-linkedin></app-linkedin>
 </div>
