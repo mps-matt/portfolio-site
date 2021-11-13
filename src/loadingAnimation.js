@@ -43,6 +43,7 @@ var runLoadingAnimation = () => {
         if (opacity>0) {
            opacity -= .05;
            setTimeout(FadeCanvasOut,30);
+           canvas.style.zIndex -= 1;
         }
         canvas.style.opacity = opacity;
      }
