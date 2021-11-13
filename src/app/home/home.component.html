@@ -1,2 +1,6 @@
-<img src="{{ portfolioService.bannerImage | async }}" alt="Banner Image" />
-<app-linkedin></app-linkedin>
+<div class="banner" 
+    [style.background-image]="'url('+ (portfolioService.bannerImage | async)+')'" 
+    [style.background-size]="'contain'">
+
+    <app-linkedin></app-linkedin>
+</div>
