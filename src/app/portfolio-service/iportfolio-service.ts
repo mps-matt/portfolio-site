@@ -9,4 +9,9 @@ export abstract class IPortfolioService {
     abstract pronouns: Observable<string>;
     abstract smallDescription: Observable<string>;
     abstract linkedInUrl: Observable<string>;
+    abstract email: Observable<string>;
+    abstract phone: Observable<string>;
+    abstract githubName: Observable<string>;
+    abstract githubUrl: Observable<string>;
+    abstract googleMapsUrl: Observable<string>;
 }

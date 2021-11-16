@@ -1,0 +1,19 @@
+<mat-card class='footer'>
+    <div class='contactUs'>
+        <h3>Get In Touch</h3>
+        <p>Email: <i> {{ portfolioService.email | async }} </i></p>
+        <p>Phone: <i> {{ portfolioService.phone | async }} </i></p>
+        <p>LinkedIn: <i><a> {{ portfolioService.fullName | async }} </a></i></p>
+        <p>Github: <i><a> {{ portfolioService.githubName | async }} </a></i></p>
+        <p></p>
+    </div>
+    <div class='map'>
+        <h3>Where Am I Based?</h3>
+        <iframe 
+            src="{{ (portfolioService.googleMapsUrl | async) }}"
+            style="border:0;" 
+            allowfullscreen="" 
+        >
+        </iframe>
+    </div>
+</mat-card>
