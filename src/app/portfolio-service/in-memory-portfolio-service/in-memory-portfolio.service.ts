@@ -33,15 +33,15 @@ export class InMemoryPortfolioService extends IPortfolioService {
     }
 
     get phone(): Observable<string> {
-        return of( '07580090555' );
+        return of( '+447580090555' );
     }
 
     get githubName(): Observable<string> {
-        return of( 'mps' );
+        return of( 'mps-matt' );
     }
 
     get githubUrl(): Observable<string> {
-        return of( 'http://www.github.com' );
+        return of( 'https://github.com/mps-matt' );
     }
 
     get googleMapsUrl(): Observable<string> {
