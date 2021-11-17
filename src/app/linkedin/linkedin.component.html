@@ -2,8 +2,8 @@
     <img src="{{ portfolioService.profilePicture | async }}" />
     <mat-card [class.mat-elevation-z8]='true'>  
         <mat-card-title>
-            {{ portfolioService.fullName | async }}   <fa-icon [icon]="faLinkedin"></fa-icon
-        ></mat-card-title>
+            <span class="linkedInTitle">{{ portfolioService.fullName | async }}   <fa-icon [icon]="faLinkedin"></fa-icon></span>
+        </mat-card-title>
         <mat-card-subtitle>({{ portfolioService.pronouns | async }})</mat-card-subtitle>
         <mat-card-content>
             {{ portfolioService.smallDescription | async }} 
