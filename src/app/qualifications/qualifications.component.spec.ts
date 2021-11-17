@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { QualificationsComponent } from './qualifications.component';
+import { QualificationsModule } from './qualifications.module';
 
 describe( 'QualificationsComponent', () => {
     let component: QualificationsComponent;
@@ -8,7 +9,7 @@ describe( 'QualificationsComponent', () => {
 
     beforeEach( async () => {
         await TestBed.configureTestingModule({
-            declarations: [ QualificationsComponent ]
+            imports: [ QualificationsModule ]
         })
             .compileComponents();
     });

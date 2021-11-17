@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FooterModule } from '../footer/footer.module';
 
 import { HobbiesComponent } from './hobbies.component';
 
@@ -8,7 +9,7 @@ describe( 'HobbiesComponent', () => {
 
     beforeEach( async () => {
         await TestBed.configureTestingModule({
-            declarations: [ HobbiesComponent ]
+            imports: [ FooterModule ]
         })
             .compileComponents();
     });

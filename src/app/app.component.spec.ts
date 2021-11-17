@@ -3,6 +3,7 @@ import { BrowserTestingModule } from '@angular/platform-browser/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
+import { FooterComponent } from './footer/footer.component';
 
 describe( 'AppComponent', () => {
     beforeEach( async () => {
@@ -12,7 +13,14 @@ describe( 'AppComponent', () => {
                 RouterTestingModule,
                 AppModule
             ]
-        }).compileComponents();
+        })
+            .overrideComponent( FooterComponent, {
+                set: {
+                    selector: 'app-footer',
+                    template: `<h1>Footer</h1>`
+                }
+            })
+            .compileComponents();
     });
 
     it( 'should create the app', () => {
